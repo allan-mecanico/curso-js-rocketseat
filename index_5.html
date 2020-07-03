@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Curso javascript</title>
+    </head>
+    <body>
+<script>
+//Escreva uma função que produza o seguinte resultado:
+
+//O Diego possui as habilidades: Javascript, ReactJS, Redux
+//O Gabriel possui as habilidades: VueJS, Ruby on Rails, Elixir
+
+//Dica: Para percorrer um vetor você deve utilizar a sintaxe for...of e para unir valores de um array
+//com um separador utilize o join.
+const Diego = ['O Diego possui as seguintes habildades:Javascript','ReactJS','Redux'];
+const Gabriel = ['O Gabriel possui as seguintes habilidades:VueJS', 'Ruby on Rails', 'Elixir'];
+
+
+for (const skills of Diego.join('-')){
+  console.log(skills);
+}
+for (const skills of Gabriel.join(',')){
+  console.log(skills)
+}
+
+
+ </script>
+</body>

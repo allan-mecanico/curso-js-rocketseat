@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Curso javascript</title>
+    </head>
+    <body>
+        
+        <button id="new">Novo quadrado</button>
+
+        <div id="squares"></div>
+      
+        <script>
+          var btnElement = document.getElementById('new');
+          //referenciando o button 
+          var squaresElement = document.getElementById('squares');
+          //referenciado o id="squares"
+      
+          btnElement.onclick = function ()
+          //btnElement.onclick ja refenciado no < button id="new", tem uma function criada com o  
+          //btnElement.onclick que serve para cada clicada é inserido o Elemento var square;
+          {
+          
+            var square = document.createElement('div');
+            //var square inputado na <div id "squares" (primeira etapa)
+      
+            square.style.width = '100px';
+            square.style.height = '100px';
+            square.style.backgroundColor = '#F00';
+      
+            squaresElement.appendChild(square);
+            ////var square inputado na <div id "squares" (segunda etapa) square.style com informações suficientes para o Elemento ser criado
+          //  squaresElement.appendChild(square); Elemento já criado, agora o comando appendChild(square); conclui o input da <div id="squares"
+          };
+        
+            
+            
+            
+
+
+       </script>
+    </body>
+</html>
